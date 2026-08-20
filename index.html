@@ -108,7 +108,8 @@ section{scroll-margin-top:60px}
 .embla.is-ready .embla__container{overflow:visible}
 .embla__slide{flex:0 0 clamp(240px,74%,420px);min-width:0;scroll-snap-align:start}
 .shot{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid hsl(var(--border));background:hsl(var(--muted))}
-.shot img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.shot img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;cursor:zoom-in;transition:opacity .15s}
+.shot img:hover{opacity:.9}
 .shot figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 12px;color:#fff;font-size:13px;font-weight:700;background:linear-gradient(transparent,rgba(11,17,28,.82))}
 .car-nav{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
 .car-btn{width:38px;height:38px;border-radius:999px;border:1px solid hsl(var(--border));background:hsl(var(--card));cursor:pointer;font-size:16px;color:hsl(var(--foreground));display:flex;align-items:center;justify-content:center;transition:.15s}
@@ -117,7 +118,8 @@ section{scroll-margin-top:60px}
 
 /* ---------- Day ---------- */
 .day-hero{position:relative;height:190px;overflow:hidden}
-.day-hero img{width:100%;height:100%;object-fit:cover}
+.day-hero img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:opacity .15s}
+.day-hero:hover img{opacity:.92}
 .day-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,17,28,.05),rgba(11,17,28,.78))}
 .day-hero-txt{position:absolute;left:20px;bottom:16px;right:20px;color:#fff}
 .day-hero-txt .dh-date{font-size:12.5px;font-weight:700;opacity:.92;margin-bottom:4px}
@@ -132,8 +134,9 @@ section{scroll-margin-top:60px}
 .lbl{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--muted-foreground));margin:0 0 10px}
 .food-slot{margin-bottom:16px}
 .food-slot > p{font-size:13px;font-weight:700;color:hsl(var(--muted-foreground));margin-bottom:8px}
-.food-item{display:flex;gap:12px;border:1px solid hsl(var(--border));border-radius:calc(var(--radius) - 3px);padding:10px;margin-bottom:8px;background:hsl(var(--card))}
-.food-thumb{width:64px;height:64px;flex:none;border-radius:calc(var(--radius) - 5px);object-fit:cover;background:hsl(var(--muted))}
+.food-item{display:flex;gap:13px;border:1px solid hsl(var(--border));border-radius:calc(var(--radius) - 3px);padding:11px;margin-bottom:8px;background:hsl(var(--card))}
+.food-thumb{width:92px;height:92px;flex:none;border-radius:calc(var(--radius) - 5px);object-fit:cover;background:hsl(var(--muted));cursor:zoom-in;transition:opacity .15s}
+.food-thumb:hover{opacity:.85}
 .food-item-body{flex:1;min-width:0}
 .food-item-h{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:4px}
 .food-item-n{font-size:14.5px;font-weight:800}
@@ -209,6 +212,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   .container{padding-left:18px;padding-right:18px}
   body{font-size:15.5px}
 }
+
+/* ---------- Lightbox ---------- */
+.lightbox{position:fixed;inset:0;z-index:200;background:rgba(11,17,28,.92);display:none;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(4px)}
+.lightbox.is-open{display:flex}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:calc(var(--radius) - 2px);box-shadow:0 20px 60px rgba(0,0,0,.5);object-fit:contain}
+.lightbox-cap{position:absolute;left:0;right:0;bottom:20px;text-align:center;color:#fff;font-size:14px;font-weight:600;padding:0 20px}
+.lightbox-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.lightbox-close:hover{background:rgba(255,255,255,.22)}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/embla-carousel@8.3.0/embla-carousel.umd.js"></script></head>
 <body>
@@ -224,7 +235,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
 <div class="stats-bar"><div class="container">
   <div class="hero-stats">
     <div class="hero-stat"><b>2027.1.20 – 1.25</b><span>수요일 출발 · 월요일 귀국</span></div>
-    <div class="hero-stat"><b>8명</b><span>50대 4 · 20대 3 · 고1 1</span></div>
+    <div class="hero-stat"><b>8명</b><span>이모네 가족과 함께</span></div>
     <div class="hero-stat"><b>타이베이 3박 · 가오슝 2박</b><span>고속철도로 이동</span></div>
     <div class="hero-stat"><b>인당 약 165만원</b><span>표준형 기준 (항공·숙소 포함)</span></div>
   </div>
@@ -388,14 +399,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
           <div class="food-item-p">NT$300~600</div>
           <div class="food-item-d">회전판 테이블이라 다인원 나눠먹기 좋음. 부모님 동반 후기 다수</div>
         </div></div>
-        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="왕하이팅 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/seafood2.jpg" width="360" height="480" loading="lazy" decoding="async" alt="왕하이팅 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">왕하이팅 해선餐廳</span>
             <span class="badge badge-gold">60년 노포</span>
           </div>
           <div class="food-item-p">1인 NT$375~1,000</div>
           <div class="food-item-d">합채 3,000~8,000. 활랍스터 NT$680/마리. 1층 넓은 단체석 + 무료주차</div>
         </div></div>
-        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="쓰제메이 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/seafood3.jpg" width="480" height="473" loading="lazy" decoding="async" alt="쓰제메이 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">쓰제메이 해선餐廳</span>
             <span class="badge badge-gold">40년 노포</span>
           </div>
@@ -494,7 +505,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
           <div class="food-item-p">NT$500~700</div>
           <div class="food-item-d">브리즈신이 2F. U자 소파 7~8인석 확인됨</div>
         </div></div>
-        <div class="food-item"><img src="img/beefnoodle.jpg" width="800" height="600" loading="lazy" decoding="async" alt="무지 우육면 穆記牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/beefnoodle2.jpg" width="480" height="270" loading="lazy" decoding="async" alt="무지 우육면 穆記牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">무지 우육면 穆記牛肉麵</span>
             <span class="badge badge-gold">미슐랭 빕구르망 8년 연속</span>
           </div>
@@ -557,14 +568,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
           <div class="food-item-p">NT$400~600</div>
           <div class="food-item-d">융캉 본점은 포장 전용으로 전환됨. 대기접수 평일 10:20 / 주말 9:50</div>
         </div></div>
-        <div class="food-item"><img src="img/xiaolongbao.jpg" width="800" height="600" loading="lazy" decoding="async" alt="하오궁다오 진지위안" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/xiaolongbao2.jpg" width="480" height="360" loading="lazy" decoding="async" alt="하오궁다오 진지위안" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">하오궁다오 진지위안</span>
             <span class="badge badge-gold">구 빕구르망</span>
           </div>
           <div class="food-item-p">NT$150~250</div>
           <div class="food-item-d">소식포자·蟹黃湯包. 딘타이펑보다 저렴</div>
         </div></div>
-        <div class="food-item"><img src="img/xiaolongbao.jpg" width="800" height="600" loading="lazy" decoding="async" alt="항저우샤오룽탕바오" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/xiaolongbao3.jpg" width="480" height="320" loading="lazy" decoding="async" alt="항저우샤오룽탕바오" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">항저우샤오룽탕바오</span>
             <span class="badge badge-gold">미슐랭 빕구르망 현재 등재</span>
           </div>
@@ -575,7 +586,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>다다오청 별미</p>
       
-        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="다오서식관 디화점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/banquet2.jpg" width="480" height="321" loading="lazy" decoding="async" alt="다오서식관 디화점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">다오서식관 디화점</span>
             
           </div>
@@ -663,7 +674,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
           <div class="food-item-p">NT$50~150</div>
           <div class="food-item-d">八寶肉粽 전문. 좌석이 적어 분산 방문 권장</div>
         </div></div>
-        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="푸타이판줘 제3대" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/banquet3.jpg" width="480" height="320" loading="lazy" decoding="async" alt="푸타이판줘 제3대" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">푸타이판줘 제3대</span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
@@ -674,7 +685,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>보얼예술특구 근처</p>
       
-        <div class="food-item"><img src="img/beefnoodle.jpg" width="800" height="600" loading="lazy" decoding="async" alt="향원우육면 港園牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/beefnoodle3.jpg" width="480" height="360" loading="lazy" decoding="async" alt="향원우육면 港園牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">향원우육면 港園牛肉麵</span>
             <span class="badge badge-gold">트립어드바이저 보얼 주변 1위</span>
           </div>
@@ -692,14 +703,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>치진섬 해산물 — 택1</p>
       
-        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="치허우훠하이찬뎬 旗后活海產" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/seafood4.jpg" width="480" height="360" loading="lazy" decoding="async" alt="치허우훠하이찬뎬 旗后活海產" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">치허우훠하이찬뎬 旗后活海產</span>
             <span class="badge badge-gold">40년 노포</span>
           </div>
           <div class="food-item-p">NT$400~500</div>
           <div class="food-item-d">페리 선착장 도보권. 마늘 스캘럽찜</div>
         </div></div>
-        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="야자오훠하이찬 鴨角活海產" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/seafood5.jpg" width="480" height="360" loading="lazy" decoding="async" alt="야자오훠하이찬 鴨角活海產" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">야자오훠하이찬 鴨角活海產</span>
             <span class="badge badge-gold">현지인 인기</span>
           </div>
@@ -710,14 +721,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>저녁 — 야시장 또는 좌식</p>
       
-        <div class="food-item"><img src="img/nightmarket_food.jpg" width="800" height="638" loading="lazy" decoding="async" alt="리우허 야시장" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/nightmarket2.jpg" width="480" height="360" loading="lazy" decoding="async" alt="리우허 야시장" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">리우허 야시장</span>
             
           </div>
           <div class="food-item-p">NT$100~150</div>
           <div class="food-item-d">MRT 메이리다오역. 파파야밀크·해산물죽·새우메추리알볼</div>
         </div></div>
-        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="白玉樓 경전대채" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
+        <div class="food-item"><img src="img/food/banquet4.jpg" width="480" height="360" loading="lazy" decoding="async" alt="白玉樓 경전대채" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">白玉樓 경전대채</span>
             <span class="badge badge-gold">미슐랭 빕구르망 2025 신규</span>
           </div>
@@ -1289,6 +1300,12 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   </table></div>
 </div></section>
 
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="닫기">✕</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-cap" id="lightboxCap"></div>
+</div>
 <footer>
   <div class="container">
     대만 가족여행 · 2027년 1월 20일 – 25일 · 8인<br>
@@ -1343,6 +1360,32 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   s.src = "https://cdn.jsdelivr.net/npm/embla-carousel@8.3.0/embla-carousel.umd.js";
   s.onload = initEmbla;
   document.head.appendChild(s);
-})();</script>
+})();
+(function(){
+  var lb = document.getElementById("lightbox");
+  var lbImg = document.getElementById("lightboxImg");
+  var lbCap = document.getElementById("lightboxCap");
+  var lbClose = document.getElementById("lightboxClose");
+  function openLightbox(src, alt){
+    lbImg.src = src;
+    lbImg.alt = alt || "";
+    lbCap.textContent = alt || "";
+    lb.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLightbox(){
+    lb.classList.remove("is-open");
+    document.body.style.overflow = "";
+    lbImg.src = "";
+  }
+  document.addEventListener("click", function(e){
+    var el = e.target.closest(".food-thumb, .shot img, .day-hero img");
+    if (el) { openLightbox(el.currentSrc || el.src, el.alt); return; }
+    if (e.target === lb) { closeLightbox(); }
+  });
+  lbClose.addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeLightbox(); });
+})();
+</script>
 
 </body></html>
