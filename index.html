@@ -37,18 +37,19 @@ a{color:inherit}
 strong,b{font-weight:800}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:min(78vh,600px);display:flex;align-items:flex-end;overflow:hidden}
+.hero{position:relative;min-height:min(52vh,420px);display:flex;align-items:flex-end;overflow:hidden}
 .hero-bg{position:absolute;inset:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,17,28,.20) 0%,rgba(11,17,28,.62) 55%,rgba(11,17,28,.92) 100%)}
-.hero-inner{position:relative;width:100%;padding:0 20px 40px;box-sizing:border-box}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,17,28,.20) 0%,rgba(11,17,28,.60) 60%,rgba(11,17,28,.88) 100%)}
+.hero-inner{position:relative;width:100%;padding:0 20px 32px;box-sizing:border-box}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.34);background:rgba(255,255,255,.14);backdrop-filter:blur(6px);padding:7px 15px;border-radius:999px;margin-bottom:18px}
 .hero h1{color:#fff;font-size:clamp(30px,7.2vw,50px);font-weight:800;letter-spacing:-.025em;line-height:1.15;margin-bottom:10px}
-.hero-sub{color:rgba(255,255,255,.94);font-size:clamp(14.5px,3.6vw,17px);font-weight:600;margin-bottom:22px;line-height:1.55}
+.hero-sub{color:rgba(255,255,255,.94);font-size:clamp(14.5px,3.6vw,17px);font-weight:600;line-height:1.55}
+.stats-bar{background:hsl(var(--card));border-bottom:1px solid hsl(var(--border));padding:16px 0}
 .hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
-.hero-stat{display:flex;flex-direction:column;gap:3px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(8px);border-radius:calc(var(--radius) - 2px);padding:12px 14px}
-.hero-stat b{color:#fff;font-size:15.5px;font-weight:800;letter-spacing:-.01em}
-.hero-stat span{color:rgba(255,255,255,.8);font-size:11.5px;font-weight:600}
+.hero-stat{display:flex;flex-direction:column;gap:3px;background:hsl(var(--muted));border:1px solid hsl(var(--border));border-radius:calc(var(--radius) - 2px);padding:12px 14px}
+.hero-stat b{color:hsl(var(--foreground));font-size:15.5px;font-weight:800;letter-spacing:-.01em}
+.hero-stat span{color:hsl(var(--muted-foreground));font-size:11.5px;font-weight:600}
 @media(min-width:560px){ .hero-stats{grid-template-columns:repeat(4,1fr)} }
 
 /* ---------- Nav ---------- */
@@ -212,14 +213,16 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="hero-eyebrow">Family Trip · 5박 6일</div>
     <h1>대만 가족여행</h1>
     <p class="hero-sub">타이베이 · 지우펀 · 베이터우 · 가오슝 · 타이난 &nbsp;|&nbsp; 이모네 가족과 함께 8인</p>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>2027.1.20 – 1.25</b><span>수요일 출발 · 월요일 귀국</span></div>
-      <div class="hero-stat"><b>8명</b><span>50대 4 · 20대 3 · 고1 1</span></div>
-      <div class="hero-stat"><b>타이베이 3박 · 가오슝 2박</b><span>고속철도로 이동</span></div>
-      <div class="hero-stat"><b>인당 약 165만원</b><span>표준형 기준 (항공·숙소 포함)</span></div>
-    </div>
   </div>
 </header>
+<div class="stats-bar"><div class="container">
+  <div class="hero-stats">
+    <div class="hero-stat"><b>2027.1.20 – 1.25</b><span>수요일 출발 · 월요일 귀국</span></div>
+    <div class="hero-stat"><b>8명</b><span>50대 4 · 20대 3 · 고1 1</span></div>
+    <div class="hero-stat"><b>타이베이 3박 · 가오슝 2박</b><span>고속철도로 이동</span></div>
+    <div class="hero-stat"><b>인당 약 165만원</b><span>표준형 기준 (항공·숙소 포함)</span></div>
+  </div>
+</div></div>
 
 <nav class="nav"><div class="nav-inner">
   <a href="#preview">사진</a>
