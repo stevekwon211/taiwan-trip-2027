@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,6 +7,7 @@
 <meta property="og:title" content="대만 가족여행 2027.1.20–25">
 <meta property="og:description" content="타이베이 3박 · 가오슝 2박 · 8인 가족 일정표">
 <meta property="og:type" content="website">
+<link rel="preload" as="image" href="img/hero_taipei.jpg" fetchpriority="high">
 <style>
 :root{
   --background:210 20% 98%; --foreground:216 23% 13%;
@@ -130,7 +132,9 @@ section{scroll-margin-top:60px}
 .lbl{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:hsl(var(--muted-foreground));margin:0 0 10px}
 .food-slot{margin-bottom:16px}
 .food-slot > p{font-size:13px;font-weight:700;color:hsl(var(--muted-foreground));margin-bottom:8px}
-.food-item{border:1px solid hsl(var(--border));border-radius:calc(var(--radius) - 3px);padding:13px 14px;margin-bottom:8px;background:hsl(var(--card))}
+.food-item{display:flex;gap:12px;border:1px solid hsl(var(--border));border-radius:calc(var(--radius) - 3px);padding:10px;margin-bottom:8px;background:hsl(var(--card))}
+.food-thumb{width:64px;height:64px;flex:none;border-radius:calc(var(--radius) - 5px);object-fit:cover;background:hsl(var(--muted))}
+.food-item-body{flex:1;min-width:0}
 .food-item-h{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:4px}
 .food-item-n{font-size:14.5px;font-weight:800}
 .food-item-p{font-size:13px;font-weight:800;color:hsl(var(--primary));margin-bottom:3px}
@@ -210,7 +214,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
 <body>
 
 <header class="hero">
-  <div class="hero-bg"><img src="img/hero_taipei.jpg" alt="타이베이 스카이라인"></div>
+  <div class="hero-bg"><img src="img/hero_taipei.jpg" width="800" height="523" fetchpriority="high" alt="타이베이 스카이라인"></div>
   <div class="container hero-inner">
     <div class="hero-eyebrow">Family Trip · 5박 6일</div>
     <h1>대만 가족여행</h1>
@@ -244,7 +248,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   </div>
   <div class="carousel" data-carousel="">
     <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-      <div class="embla__slide"><figure class="shot"><img src="img/jiufen.jpg" alt="지우펀 노가 — Day2" loading="lazy"><figcaption>지우펀 노가 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/yehliu.jpg" alt="예류지질공원 — Day2" loading="lazy"><figcaption>예류지질공원 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/beitou.jpg" alt="베이터우 온천박물관 — Day3" loading="lazy"><figcaption>베이터우 온천박물관 — Day3</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/taipei101.jpg" alt="타이베이101 — Day3" loading="lazy"><figcaption>타이베이101 — Day3</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/shifen.jpg" alt="스펀 천등 — Day2" loading="lazy"><figcaption>스펀 천등 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/dihua.jpg" alt="다다오청 디화제 — Day4" loading="lazy"><figcaption>다다오청 디화제 — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/pier2.jpg" alt="보얼예술특구 — Day5" loading="lazy"><figcaption>보얼예술특구 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/cijin.jpg" alt="치진섬 — Day5" loading="lazy"><figcaption>치진섬 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/ruifeng.jpg" alt="루이펑 야시장 — Day4" loading="lazy"><figcaption>루이펑 야시장 — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/chimei.jpg" alt="치메이박물관 — Day5" loading="lazy"><figcaption>치메이박물관 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/sanfeng.jpg" alt="삼봉궁 — Day6" loading="lazy"><figcaption>삼봉궁 — Day6</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/nightmarket_food.jpg" alt="야시장 먹거리" loading="lazy"><figcaption>야시장 먹거리</figcaption></figure></div>
+      <div class="embla__slide"><figure class="shot"><img src="img/jiufen.jpg" width="800" height="600" decoding="async" alt="지우펀 노가 — Day2" loading="lazy"><figcaption>지우펀 노가 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/yehliu.jpg" width="493" height="800" decoding="async" alt="예류지질공원 — Day2" loading="lazy"><figcaption>예류지질공원 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/beitou.jpg" width="800" height="532" decoding="async" alt="베이터우 온천박물관 — Day3" loading="lazy"><figcaption>베이터우 온천박물관 — Day3</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/taipei101.jpg" alt="타이베이101 — Day3" loading="lazy"><figcaption>타이베이101 — Day3</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/shifen.jpg" width="600" height="800" decoding="async" alt="스펀 천등 — Day2" loading="lazy"><figcaption>스펀 천등 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/dihua.jpg" width="600" height="800" decoding="async" alt="다다오청 디화제 — Day4" loading="lazy"><figcaption>다다오청 디화제 — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/pier2.jpg" alt="보얼예술특구 — Day5" loading="lazy"><figcaption>보얼예술특구 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/cijin.jpg" width="800" height="532" decoding="async" alt="치진섬 — Day5" loading="lazy"><figcaption>치진섬 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/ruifeng.jpg" width="800" height="579" decoding="async" alt="루이펑 야시장 — Day4" loading="lazy"><figcaption>루이펑 야시장 — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/chimei.jpg" width="800" height="470" decoding="async" alt="치메이박물관 — Day5" loading="lazy"><figcaption>치메이박물관 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/sanfeng.jpg" width="800" height="600" decoding="async" alt="삼봉궁 — Day6" loading="lazy"><figcaption>삼봉궁 — Day6</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/nightmarket_food.jpg" width="800" height="638" decoding="async" alt="야시장 먹거리" loading="lazy"><figcaption>야시장 먹거리</figcaption></figure></div>
     </div></div>
     <div class="car-nav">
       <button class="car-btn" data-prev="" aria-label="이전" disabled="">‹</button>
@@ -264,7 +268,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <section id="day1" class="sec"><div class="container">
     <div class="card">
       <div class="day-hero">
-        <img src="img/ximending.jpg" alt="도착 · 시먼딩" loading="lazy">
+        <img src="img/ximending.jpg" width="800" height="532" decoding="async" alt="도착 · 시먼딩" loading="lazy">
         <div class="day-hero-txt">
           <div class="dh-date">Day 1 · 1월 20일 (수) · 타이베이</div>
           <h3>도착 · 시먼딩</h3>
@@ -285,7 +289,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
             
     <div class="carousel" data-carousel="" style="margin-top:16px">
       <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-        <div class="embla__slide"><figure class="shot"><img src="img/raohe.jpg" alt="라오허제 야시장 — Day1 저녁 대안" loading="lazy"><figcaption>라오허제 야시장 — Day1 저녁 대안</figcaption></figure></div>
+        <div class="embla__slide"><figure class="shot"><img src="img/raohe.jpg" width="800" height="600" decoding="async" alt="라오허제 야시장 — Day1 저녁 대안" loading="lazy"><figcaption>라오허제 야시장 — Day1 저녁 대안</figcaption></figure></div>
       </div></div>
       <div class="car-nav"><button class="car-btn" data-prev="" disabled="">‹</button><button class="car-btn" data-next="" disabled="">›</button></div>
     </div>
@@ -296,42 +300,38 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>간식</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/noodle_intestine.jpg" width="480" height="360" loading="lazy" decoding="async" alt="아종면선 시먼점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">아종면선 시먼점</span>
             
           </div>
           <div class="food-item-p">NT$60~80</div>
           <div class="food-item-d">곱창국수. 서서 먹는 노점형(좌석 없음), 현금만</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>저녁 — 3개 중 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/beefnoodle.jpg" width="800" height="600" loading="lazy" decoding="async" alt="라오산둥 우육면가상점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">라오산둥 우육면가상점</span>
             <span class="badge badge-gold">미슐랭 빕구르망 8년 연속</span>
           </div>
           <div class="food-item-p">NT$150~250</div>
           <div class="food-item-d">완녠상업대루 B1. 400석 이상이라 8인 좌석 걱정 없음</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/malahotpot.jpg" width="480" height="359" loading="lazy" decoding="async" alt="마라딩지 훠궈 시먼점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">마라딩지 훠궈 시먼점</span>
             
           </div>
           <div class="food-item-p">NT$698~999</div>
           <div class="food-item-d">마라·원앙 훠궈 무제한. 단체석 예약 필수</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/nightmarket_food.jpg" width="800" height="638" loading="lazy" decoding="async" alt="라오허제 관광야시장" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">라오허제 관광야시장</span>
             <span class="badge badge-gold">미슐랭 추천 노점 다수</span>
           </div>
           <div class="food-item-p">NT$50~100</div>
           <div class="food-item-d">600m 일자형 골목이라 8인이 흩어지지 않음. 후자오빙·약둔파이구·아궈루웨이·모찌</div>
-        </div>
+        </div></div>
     </div>
             
               <p class="lbl" style="margin-top:14px">이날 드는 비용</p>
@@ -349,7 +349,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <section id="day2" class="sec"><div class="container">
     <div class="card">
       <div class="day-hero">
-        <img src="img/yehliu.jpg" alt="예류 · 스펀 · 지우펀 (8인 전세밴)" loading="lazy">
+        <img src="img/yehliu.jpg" width="493" height="800" decoding="async" alt="예류 · 스펀 · 지우펀 (8인 전세밴)" loading="lazy">
         <div class="day-hero-txt">
           <div class="dh-date">Day 2 · 1월 21일 (목) · 타이베이 근교</div>
           <h3>예류 · 스펀 · 지우펀 (8인 전세밴)</h3>
@@ -370,7 +370,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
             
     <div class="carousel" data-carousel="" style="margin-top:16px">
       <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-        <div class="embla__slide"><figure class="shot"><img src="img/shifen.jpg" alt="스펀 천등 — Day2" loading="lazy"><figcaption>스펀 천등 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/jiufen.jpg" alt="지우펀 노가 — Day2" loading="lazy"><figcaption>지우펀 노가 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/jinguashi.jpg" alt="진과스 황금박물관 — Day2" loading="lazy"><figcaption>진과스 황금박물관 — Day2</figcaption></figure></div>
+        <div class="embla__slide"><figure class="shot"><img src="img/shifen.jpg" width="600" height="800" decoding="async" alt="스펀 천등 — Day2" loading="lazy"><figcaption>스펀 천등 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/jiufen.jpg" width="800" height="600" decoding="async" alt="지우펀 노가 — Day2" loading="lazy"><figcaption>지우펀 노가 — Day2</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/jinguashi.jpg" width="800" height="532" decoding="async" alt="진과스 황금박물관 — Day2" loading="lazy"><figcaption>진과스 황금박물관 — Day2</figcaption></figure></div>
       </div></div>
       <div class="car-nav"><button class="car-btn" data-prev="" disabled="">‹</button><button class="car-btn" data-next="">›</button></div>
     </div>
@@ -381,42 +381,38 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>점심 — 3개 중 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="북해어항" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">북해어항</span>
             
           </div>
           <div class="food-item-p">NT$300~600</div>
           <div class="food-item-d">회전판 테이블이라 다인원 나눠먹기 좋음. 부모님 동반 후기 다수</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="왕하이팅 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">왕하이팅 해선餐廳</span>
             <span class="badge badge-gold">60년 노포</span>
           </div>
           <div class="food-item-p">1인 NT$375~1,000</div>
           <div class="food-item-d">합채 3,000~8,000. 활랍스터 NT$680/마리. 1층 넓은 단체석 + 무료주차</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="쓰제메이 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">쓰제메이 해선餐廳</span>
             <span class="badge badge-gold">40년 노포</span>
           </div>
           <div class="food-item-p">NT$300~800</div>
           <div class="food-item-d">2~3층에 8인 이상 대형 테이블 보유 확인</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>간식</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/peanut_icecream.jpg" width="480" height="360" loading="lazy" decoding="async" alt="아주 땅콩아이스크림 (阿珠雪在燒)" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">아주 땅콩아이스크림 (阿珠雪在燒)</span>
             
           </div>
           <div class="food-item-p">NT$40~60</div>
           <div class="food-item-d">지우펀 기산제 대표 명물. 양이 많아 2명당 1개면 충분</div>
-        </div>
+        </div></div>
     </div>
             
               <p class="lbl" style="margin-top:14px">이날 드는 비용</p>
@@ -434,7 +430,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <section id="day3" class="sec"><div class="container">
     <div class="card">
       <div class="day-hero">
-        <img src="img/beitou.jpg" alt="베이터우 온천 · 타이베이101 · 키키" loading="lazy">
+        <img src="img/beitou.jpg" width="800" height="532" decoding="async" alt="베이터우 온천 · 타이베이101 · 키키" loading="lazy">
         <div class="day-hero-txt">
           <div class="dh-date">Day 3 · 1월 22일 (금) · 타이베이</div>
           <h3>베이터우 온천 · 타이베이101 · 키키</h3>
@@ -455,7 +451,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
             
     <div class="carousel" data-carousel="" style="margin-top:16px">
       <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-        <div class="embla__slide"><figure class="shot"><img src="img/thermalvalley.jpg" alt="지열곡 — Day3" loading="lazy"><figcaption>지열곡 — Day3</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/taipei101.jpg" alt="타이베이101 — Day3" loading="lazy"><figcaption>타이베이101 — Day3</figcaption></figure></div>
+        <div class="embla__slide"><figure class="shot"><img src="img/thermalvalley.jpg" width="800" height="600" decoding="async" alt="지열곡 — Day3" loading="lazy"><figcaption>지열곡 — Day3</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/taipei101.jpg" alt="타이베이101 — Day3" loading="lazy"><figcaption>타이베이101 — Day3</figcaption></figure></div>
       </div></div>
       <div class="car-nav"><button class="car-btn" data-prev="" disabled="">‹</button><button class="car-btn" data-next="">›</button></div>
     </div>
@@ -466,50 +462,45 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>점심 — 2개 중 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="펑라이 대만요리" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">펑라이 대만요리</span>
             <span class="badge badge-gold">미슐랭 가이드 셀렉트</span>
           </div>
           <div class="food-item-p">NT$400~600</div>
           <div class="food-item-d">가족식 공유 스타일. 불도장·백옥토계. 연회석 있음</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/teppanyaki.jpg" width="385" height="480" loading="lazy" decoding="async" alt="타오반우 신베이터우점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">타오반우 신베이터우점</span>
             
           </div>
           <div class="food-item-p">NT$400~600</div>
           <div class="food-item-d">체인 철판스테이크. 단체석 확보가 쉬움</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>저녁 — 메인 + 대안 2개</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/sichuan_dish.jpg" width="480" height="360" loading="lazy" decoding="async" alt="키키 레스토랑 ATT4FUN점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">키키 레스토랑 ATT4FUN점</span>
             <span class="badge badge-gold">타이베이 유일 지점</span>
           </div>
           <div class="food-item-p">1인 NT$500~700</div>
           <div class="food-item-d">예약 필수(inline.app 2주 전 오픈 / 02-2722-0388). 계란두부튀김·부추꽃볶음 추천</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/friedrice.jpg" width="480" height="360" loading="lazy" decoding="async" alt="신차오판뎬 心潮飯店" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">신차오판뎬 心潮飯店</span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
           <div class="food-item-p">NT$500~700</div>
           <div class="food-item-d">브리즈신이 2F. U자 소파 7~8인석 확인됨</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/beefnoodle.jpg" width="800" height="600" loading="lazy" decoding="async" alt="무지 우육면 穆記牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">무지 우육면 穆記牛肉麵</span>
             <span class="badge badge-gold">미슐랭 빕구르망 8년 연속</span>
           </div>
           <div class="food-item-p">NT$150~250</div>
           <div class="food-item-d">캐주얼한 노포라 예약 부담 없음</div>
-        </div>
+        </div></div>
     </div>
             
               <p class="lbl" style="margin-top:14px">이날 드는 비용</p>
@@ -527,7 +518,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <section id="day4" class="sec"><div class="container">
     <div class="card">
       <div class="day-hero">
-        <img src="img/xiaolongbao.jpg" alt="융캉제 · 다다오청 · 고속철 이동" loading="lazy">
+        <img src="img/xiaolongbao.jpg" width="800" height="600" decoding="async" alt="융캉제 · 다다오청 · 고속철 이동" loading="lazy">
         <div class="day-hero-txt">
           <div class="dh-date">Day 4 · 1월 23일 (토) · 타이베이 → 가오슝</div>
           <h3>융캉제 · 다다오청 · 고속철 이동</h3>
@@ -548,7 +539,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
             
     <div class="carousel" data-carousel="" style="margin-top:16px">
       <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-        <div class="embla__slide"><figure class="shot"><img src="img/dihua.jpg" alt="다다오청 디화제 — Day4" loading="lazy"><figcaption>다다오청 디화제 — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/thsr.jpg" alt="대만 고속철도 THSR — Day4" loading="lazy"><figcaption>대만 고속철도 THSR — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/ruifeng.jpg" alt="루이펑 야시장 — Day4" loading="lazy"><figcaption>루이펑 야시장 — Day4</figcaption></figure></div>
+        <div class="embla__slide"><figure class="shot"><img src="img/dihua.jpg" width="600" height="800" decoding="async" alt="다다오청 디화제 — Day4" loading="lazy"><figcaption>다다오청 디화제 — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/thsr.jpg" width="800" height="600" decoding="async" alt="대만 고속철도 THSR — Day4" loading="lazy"><figcaption>대만 고속철도 THSR — Day4</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/ruifeng.jpg" width="800" height="579" decoding="async" alt="루이펑 야시장 — Day4" loading="lazy"><figcaption>루이펑 야시장 — Day4</figcaption></figure></div>
       </div></div>
       <div class="car-nav"><button class="car-btn" data-prev="" disabled="">‹</button><button class="car-btn" data-next="">›</button></div>
     </div>
@@ -559,70 +550,63 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>점심 — 3개 중 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/xiaolongbao.jpg" width="800" height="600" loading="lazy" decoding="async" alt="딘타이펑 신생점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">딘타이펑 신생점</span>
             
           </div>
           <div class="food-item-p">NT$400~600</div>
           <div class="food-item-d">융캉 본점은 포장 전용으로 전환됨. 대기접수 평일 10:20 / 주말 9:50</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/xiaolongbao.jpg" width="800" height="600" loading="lazy" decoding="async" alt="하오궁다오 진지위안" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">하오궁다오 진지위안</span>
             <span class="badge badge-gold">구 빕구르망</span>
           </div>
           <div class="food-item-p">NT$150~250</div>
           <div class="food-item-d">소식포자·蟹黃湯包. 딘타이펑보다 저렴</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/xiaolongbao.jpg" width="800" height="600" loading="lazy" decoding="async" alt="항저우샤오룽탕바오" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">항저우샤오룽탕바오</span>
             <span class="badge badge-gold">미슐랭 빕구르망 현재 등재</span>
           </div>
           <div class="food-item-p">NT$200~350</div>
           <div class="food-item-d">중정기념당 인근. 샤오룽바오·딤섬</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>다다오청 별미</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="다오서식관 디화점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">다오서식관 디화점</span>
             
           </div>
           <div class="food-item-p">균일 NT$400</div>
           <div class="food-item-d">100년 홍벽돌 고택 개조. 2층 단체석(예약 필수, 주말 대기 2~3시간)</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>저녁 — 루이펑 야시장 노점</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/porkknuckle.jpg" width="480" height="360" loading="lazy" decoding="async" alt="화훈 독일족발" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">화훈 독일족발</span>
             <span class="badge badge-gold">야시장 최고 인기</span>
           </div>
           <div class="food-item-p">NT$150</div>
           <div class="food-item-d">숯불 훈제 족발, 소스 3종 선택</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/paella.jpg" width="480" height="320" loading="lazy" decoding="async" alt="Z의 스페인 빠에야" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">Z의 스페인 빠에야</span>
             
           </div>
           <div class="food-item-p">NT$130</div>
           <div class="food-item-d">초리조 + 닭다리살 + 훈제베이컨</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/oysteromelette.jpg" width="360" height="480" loading="lazy" decoding="async" alt="샤오사부 상하이 탕바오/굴전" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">샤오사부 상하이 탕바오/굴전</span>
             
           </div>
           <div class="food-item-p">NT$90</div>
           <div class="food-item-d">종합 굴전 + 샤오룽바오</div>
-        </div>
+        </div></div>
     </div>
             
               <p class="lbl" style="margin-top:14px">이날 드는 비용</p>
@@ -640,7 +624,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <section id="day5" class="sec"><div class="container">
     <div class="card">
       <div class="day-hero">
-        <img src="img/chimei.jpg" alt="타이난 당일 · 보얼예술특구 · 치진섬" loading="lazy">
+        <img src="img/chimei.jpg" width="800" height="470" decoding="async" alt="타이난 당일 · 보얼예술특구 · 치진섬" loading="lazy">
         <div class="day-hero-txt">
           <div class="dh-date">Day 5 · 1월 24일 (일) · 가오슝 · 타이난</div>
           <h3>타이난 당일 · 보얼예술특구 · 치진섬</h3>
@@ -661,7 +645,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
             
     <div class="carousel" data-carousel="" style="margin-top:16px">
       <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-        <div class="embla__slide"><figure class="shot"><img src="img/anping.jpg" alt="안핑 (안핑고보) — Day5" loading="lazy"><figcaption>안핑 (안핑고보) — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/pier2.jpg" alt="보얼예술특구 — Day5" loading="lazy"><figcaption>보얼예술특구 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/cijin.jpg" alt="치진섬 — Day5" loading="lazy"><figcaption>치진섬 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/liuhe.jpg" alt="리우허 야시장 — Day5" loading="lazy"><figcaption>리우허 야시장 — Day5</figcaption></figure></div>
+        <div class="embla__slide"><figure class="shot"><img src="img/anping.jpg" width="800" height="532" decoding="async" alt="안핑 (안핑고보) — Day5" loading="lazy"><figcaption>안핑 (안핑고보) — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/pier2.jpg" alt="보얼예술특구 — Day5" loading="lazy"><figcaption>보얼예술특구 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/cijin.jpg" width="800" height="532" decoding="async" alt="치진섬 — Day5" loading="lazy"><figcaption>치진섬 — Day5</figcaption></figure></div><div class="embla__slide"><figure class="shot"><img src="img/liuhe.jpg" width="800" height="597" decoding="async" alt="리우허 야시장 — Day5" loading="lazy"><figcaption>리우허 야시장 — Day5</figcaption></figure></div>
       </div></div>
       <div class="car-nav"><button class="car-btn" data-prev="" disabled="">‹</button><button class="car-btn" data-next="">›</button></div>
     </div>
@@ -672,90 +656,81 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>타이난 점심 — 2개 중 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/zongzi.jpg" width="480" height="270" loading="lazy" decoding="async" alt="재파하오 再發號" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">재파하오 再發號</span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
           <div class="food-item-p">NT$50~150</div>
           <div class="food-item-d">八寶肉粽 전문. 좌석이 적어 분산 방문 권장</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="푸타이판줘 제3대" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">푸타이판줘 제3대</span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
           <div class="food-item-p">NT$124~</div>
           <div class="food-item-d">반찬을 직접 고르는 카페테리아식. 입맛 다른 8인에 최적. 치칸러우 옆</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>보얼예술특구 근처</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/beefnoodle.jpg" width="800" height="600" loading="lazy" decoding="async" alt="향원우육면 港園牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">향원우육면 港園牛肉麵</span>
             <span class="badge badge-gold">트립어드바이저 보얼 주변 1위</span>
           </div>
           <div class="food-item-p">NT$130</div>
           <div class="food-item-d">향신료가 약해 한국인 입맛에 잘 맞음. 리우허가 아니라 보얼 근처</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/brunch_coffee.jpg" width="480" height="320" loading="lazy" decoding="async" alt="NOW & THEN by nybc" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">NOW &amp; THEN by nybc</span>
             
           </div>
           <div class="food-item-p">NT$300~500</div>
           <div class="food-item-d">브런치 + 핸드드립 커피</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>치진섬 해산물 — 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="치허우훠하이찬뎬 旗后活海產" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">치허우훠하이찬뎬 旗后活海產</span>
             <span class="badge badge-gold">40년 노포</span>
           </div>
           <div class="food-item-p">NT$400~500</div>
           <div class="food-item-d">페리 선착장 도보권. 마늘 스캘럽찜</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="야자오훠하이찬 鴨角活海產" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">야자오훠하이찬 鴨角活海產</span>
             <span class="badge badge-gold">현지인 인기</span>
           </div>
           <div class="food-item-p">NT$300~450</div>
           <div class="food-item-d">페리 선착장 도보권</div>
-        </div>
+        </div></div>
     </div>
     <div class="food-slot">
       <p>저녁 — 야시장 또는 좌식</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/nightmarket_food.jpg" width="800" height="638" loading="lazy" decoding="async" alt="리우허 야시장" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">리우허 야시장</span>
             
           </div>
           <div class="food-item-p">NT$100~150</div>
           <div class="food-item-d">MRT 메이리다오역. 파파야밀크·해산물죽·새우메추리알볼</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="白玉樓 경전대채" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">白玉樓 경전대채</span>
             <span class="badge badge-gold">미슐랭 빕구르망 2025 신규</span>
           </div>
           <div class="food-item-p">NT$500~800</div>
           <div class="food-item-d">몽시대 6F. 2~10인 단체 세트 운영</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/shabu.jpg" width="480" height="360" loading="lazy" decoding="async" alt="牛老大 涮牛肉" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">牛老大 涮牛肉</span>
             <span class="badge badge-gold">미슐랭 빕구르망 연속 등재</span>
           </div>
           <div class="food-item-p">NT$999 이하</div>
           <div class="food-item-d">당일 도축 샤브샤브. 한국인 입맛에 안전</div>
-        </div>
+        </div></div>
     </div>
             
               <p class="lbl" style="margin-top:14px">이날 드는 비용</p>
@@ -773,7 +748,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <section id="day6" class="sec"><div class="container">
     <div class="card">
       <div class="day-hero">
-        <img src="img/sanfeng.jpg" alt="삼봉궁 · 출국" loading="lazy">
+        <img src="img/sanfeng.jpg" width="800" height="600" decoding="async" alt="삼봉궁 · 출국" loading="lazy">
         <div class="day-hero-txt">
           <div class="dh-date">Day 6 · 1월 25일 (월) · 가오슝</div>
           <h3>삼봉궁 · 출국</h3>
@@ -794,7 +769,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
             
     <div class="carousel" data-carousel="" style="margin-top:16px">
       <div class="embla is-ready"><div class="embla__container" style="transform: translate3d(0px, 0px, 0px);">
-        <div class="embla__slide"><figure class="shot"><img src="img/kaohsiung.jpg" alt="가오슝 야경" loading="lazy"><figcaption>가오슝 야경</figcaption></figure></div>
+        <div class="embla__slide"><figure class="shot"><img src="img/kaohsiung.jpg" width="800" height="469" decoding="async" alt="가오슝 야경" loading="lazy"><figcaption>가오슝 야경</figcaption></figure></div>
       </div></div>
       <div class="car-nav"><button class="car-btn" data-prev="" disabled="">‹</button><button class="car-btn" data-next="" disabled="">›</button></div>
     </div>
@@ -805,22 +780,20 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
     <div class="food-slot">
       <p>아침 — 2개 중 택1</p>
       
-        <div class="food-item">
-          <div class="food-item-h">
+        <div class="food-item"><img src="img/food/soupdumpling_breakfast.jpg" width="480" height="360" loading="lazy" decoding="async" alt="흥륭거 興隆居" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">흥륭거 興隆居</span>
             <span class="badge badge-gold">미슐랭 가이드 소개</span>
           </div>
           <div class="food-item-p">NT$40~80</div>
           <div class="food-item-d">새벽 4:30~11:30만 운영. 탕바오 &amp; 또우장</div>
-        </div>
-        <div class="food-item">
-          <div class="food-item-h">
+        </div></div>
+        <div class="food-item"><img src="img/food/danbing.jpg" width="384" height="480" loading="lazy" decoding="async" alt="콴라이순 寬來順" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
             <span class="food-item-n">콴라이순 寬來順</span>
             <span class="badge badge-gold">가오슝 조식 양대산맥</span>
           </div>
           <div class="food-item-p">NT$25~70</div>
           <div class="food-item-d">60년 넘은 외성식 노포. 04:00~12:00 (월 휴무). 줘잉구</div>
-        </div>
+        </div></div>
     </div>
             
               <p class="lbl" style="margin-top:14px">이날 드는 비용</p>
