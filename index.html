@@ -228,6 +228,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
 .blink{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:hsl(var(--primary));text-decoration:none;background:hsl(var(--primary-soft));border-radius:6px;padding:4px 9px;margin-top:6px;min-height:28px}
 .blink:hover{background:hsl(var(--primary)/.16)}
 td .blink{margin-top:0}
+
+.stay-shots{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:2px 0 4px}
+.stay-shots img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:calc(var(--radius) - 6px);background:hsl(var(--muted));cursor:zoom-in;transition:opacity .15s}
+.stay-shots img:hover{opacity:.88}
+.stay-shots img:nth-child(4){display:none}
+@media(min-width:560px){ .stay-shots img:nth-child(4){display:block} .stay-shots{grid-template-columns:repeat(4,1fr)} }
+
+.stay-noimg{font-size:11.5px;font-weight:600;color:hsl(var(--muted-foreground));background:hsl(var(--muted));border-radius:calc(var(--radius) - 6px);padding:8px 10px;line-height:1.5}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/embla-carousel@8.3.0/embla-carousel.umd.js"></script></head>
 <body>
@@ -809,6 +817,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/wansuli_1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="萬壽里 아파트 D 사진 1"><img src="img/stay/wansuli_2.jpg" width="640" height="480" loading="lazy" decoding="async" alt="萬壽里 아파트 D 사진 2"><img src="img/stay/wansuli_3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="萬壽里 아파트 D 사진 3"></div>
     <div>
       <div class="stay-price">206,250원 <small>/ 인</small></div>
       <div class="stay-meta"><span>165만원 (3박) · 55만원/박</span></div>
@@ -830,6 +839,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/lustre_1.jpg" width="640" height="426" loading="lazy" decoding="async" alt="青山里 Lustre (가족 공유) 사진 1"><img src="img/stay/lustre_2.jpg" width="640" height="426" loading="lazy" decoding="async" alt="青山里 Lustre (가족 공유) 사진 2"><img src="img/stay/lustre_3.jpg" width="640" height="426" loading="lazy" decoding="async" alt="青山里 Lustre (가족 공유) 사진 3"><img src="img/stay/lustre_4.jpg" width="640" height="426" loading="lazy" decoding="async" alt="青山里 Lustre (가족 공유) 사진 4"></div>
     <div>
       <div class="stay-price">145,153원 <small>/ 인</small></div>
       <div class="stay-meta"><span>116만원 (3박) · 실제 조회가 (1/20~23, 8인)</span></div>
@@ -851,6 +861,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/sunshine_1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="新起里 Sunshine House 사진 1"><img src="img/stay/sunshine_2.jpg" width="640" height="360" loading="lazy" decoding="async" alt="新起里 Sunshine House 사진 2"><img src="img/stay/sunshine_3.jpg" width="640" height="360" loading="lazy" decoding="async" alt="新起里 Sunshine House 사진 3"></div>
     <div>
       <div class="stay-price">221,250원 <small>/ 인</small></div>
       <div class="stay-meta"><span>177만원 (3박) · 59만원/박</span></div>
@@ -872,6 +883,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-noimg">현재 에어비앤비에서 동일 리스팅을 확인하지 못해 사진을 넣지 않았습니다 — 링크에서 최신 매물을 확인하세요</div>
     <div>
       <div class="stay-price">172,500원 <small>/ 인</small></div>
       <div class="stay-meta"><span>138만원 (3박) · 46만원/박</span></div>
@@ -893,6 +905,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-primary">호텔 4인2실</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/cosmos_1.jpg" width="426" height="640" loading="lazy" decoding="async" alt="코스모스 호텔 타이베이역점 사진 1"><img src="img/stay/cosmos_2.jpg" width="426" height="640" loading="lazy" decoding="async" alt="코스모스 호텔 타이베이역점 사진 2"><img src="img/stay/cosmos_3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="코스모스 호텔 타이베이역점 사진 3"></div>
     <div>
       <div class="stay-price">171,717원 <small>/ 인</small></div>
       <div class="stay-meta"><span>137만원 (3박·조식포함)</span></div>
@@ -914,6 +927,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-primary">호텔 4인2실</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/caesar_1.jpg" width="432" height="640" loading="lazy" decoding="async" alt="시저메트로 타이베이 사진 1"><img src="img/stay/caesar_2.jpg" width="433" height="640" loading="lazy" decoding="async" alt="시저메트로 타이베이 사진 2"><img src="img/stay/caesar_3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="시저메트로 타이베이 사진 3"></div>
     <div>
       <div class="stay-price">228,609원 <small>/ 인</small></div>
       <div class="stay-meta"><span>183만원 (3박·조식포함)</span></div>
@@ -935,6 +949,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-primary">호텔</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/dandy_1.jpg" width="426" height="640" loading="lazy" decoding="async" alt="댄디호텔 다안 사진 1"><img src="img/stay/dandy_2.jpg" width="426" height="640" loading="lazy" decoding="async" alt="댄디호텔 다안 사진 2"><img src="img/stay/dandy_3.jpg" width="481" height="640" loading="lazy" decoding="async" alt="댄디호텔 다안 사진 3"></div>
     <div>
       <div class="stay-price">232,569원 <small>/ 인</small></div>
       <div class="stay-meta"><span>186만원 (3박·조식포함)</span></div>
@@ -980,6 +995,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-primary">호텔 4인2실</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/chateau_1.jpg" width="640" height="427" loading="lazy" decoding="async" alt="샤또드치네 가오슝 사진 1"><img src="img/stay/chateau_2.jpg" width="640" height="427" loading="lazy" decoding="async" alt="샤또드치네 가오슝 사진 2"><img src="img/stay/chateau_3.jpg" width="475" height="640" loading="lazy" decoding="async" alt="샤또드치네 가오슝 사진 3"></div>
     <div>
       <div class="stay-price">174,500원 <small>/ 인</small></div>
       <div class="stay-meta"><span>140만원 (2박·조식포함)</span></div>
@@ -1001,6 +1017,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/sinsing_1.jpg" width="640" height="427" loading="lazy" decoding="async" alt="신싱구의 집 사진 1"><img src="img/stay/sinsing_2.jpg" width="640" height="427" loading="lazy" decoding="async" alt="신싱구의 집 사진 2"><img src="img/stay/sinsing_3.jpg" width="640" height="425" loading="lazy" decoding="async" alt="신싱구의 집 사진 3"></div>
     <div>
       <div class="stay-price">112,500원 <small>/ 인</small></div>
       <div class="stay-meta"><span>90만원 (2박) · 45만원/박</span></div>
@@ -1022,6 +1039,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/fubeili_1.jpg" width="640" height="426" loading="lazy" decoding="async" alt="府北里 아파트 사진 1"><img src="img/stay/fubeili_2.jpg" width="640" height="426" loading="lazy" decoding="async" alt="府北里 아파트 사진 2"><img src="img/stay/fubeili_3.jpg" width="640" height="426" loading="lazy" decoding="async" alt="府北里 아파트 사진 3"></div>
     <div>
       <div class="stay-price">52,500원 <small>/ 인</small></div>
       <div class="stay-meta"><span>42만원 (2박) · 21만원/박</span></div>
@@ -1043,6 +1061,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-accent">에어비앤비</span>
     </div>
+    <div class="stay-noimg">현재 에어비앤비에서 동일 리스팅을 확인하지 못해 사진을 넣지 않았습니다 — 링크에서 최신 매물을 확인하세요</div>
     <div>
       <div class="stay-price">50,000원 <small>/ 인</small></div>
       <div class="stay-meta"><span>40만원 (2박) · 20만원/박</span></div>
@@ -1064,6 +1083,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-primary">호텔 4인2실</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/cozzi_1.jpg" width="640" height="480" loading="lazy" decoding="async" alt="호텔 코지 중산 사진 1"><img src="img/stay/cozzi_2.jpg" width="640" height="480" loading="lazy" decoding="async" alt="호텔 코지 중산 사진 2"><img src="img/stay/cozzi_3.jpg" width="640" height="480" loading="lazy" decoding="async" alt="호텔 코지 중산 사진 3"></div>
     <div>
       <div class="stay-price">154,375원 <small>/ 인</small></div>
       <div class="stay-meta"><span>124만원 (2박·조식포함)</span></div>
@@ -1085,6 +1105,7 @@ td .blink{margin-top:0}
       </div>
       <span class="badge badge-primary">호텔 4인2실</span>
     </div>
+    <div class="stay-shots"><img src="img/stay/marriott_1.jpg" width="640" height="426" loading="lazy" decoding="async" alt="가오슝 메리어트 사진 1"><img src="img/stay/marriott_2.jpg" width="640" height="426" loading="lazy" decoding="async" alt="가오슝 메리어트 사진 2"><img src="img/stay/marriott_3.jpg" width="640" height="426" loading="lazy" decoding="async" alt="가오슝 메리어트 사진 3"></div>
     <div>
       <div class="stay-price">244,875원 <small>/ 인</small></div>
       <div class="stay-meta"><span>196만원 (2박·조식포함)</span></div>
@@ -1410,7 +1431,7 @@ td .blink{margin-top:0}
     lbImg.src = "";
   }
   document.addEventListener("click", function(e){
-    var el = e.target.closest(".food-thumb, .shot img, .day-hero img");
+    var el = e.target.closest(".food-thumb, .shot img, .day-hero img, .stay-shots img");
     if (el) { openLightbox(el.currentSrc || el.src, el.alt); return; }
     if (e.target === lb) { closeLightbox(); }
   });
