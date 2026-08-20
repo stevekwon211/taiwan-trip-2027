@@ -220,6 +220,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
 .lightbox-cap{position:absolute;left:0;right:0;bottom:20px;text-align:center;color:#fff;font-size:14px;font-weight:600;padding:0 20px}
 .lightbox-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .lightbox-close:hover{background:rgba(255,255,255,.22)}
+
+/* ---------- Links ---------- */
+.mlink{color:inherit;text-decoration:none;border-bottom:1.5px dotted hsl(var(--primary)/.5);transition:.15s}
+.mlink:hover{color:hsl(var(--primary));border-bottom-color:hsl(var(--primary))}
+.mpin{display:inline-block;margin-left:5px;font-size:10px;font-weight:700;color:hsl(var(--primary));background:hsl(var(--primary-soft));border-radius:4px;padding:1px 5px;vertical-align:middle;letter-spacing:0;border-bottom:none}
+.blink{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:700;color:hsl(var(--primary));text-decoration:none;background:hsl(var(--primary-soft));border-radius:6px;padding:4px 9px;margin-top:6px;min-height:28px}
+.blink:hover{background:hsl(var(--primary)/.16)}
+td .blink{margin-top:0}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/embla-carousel@8.3.0/embla-carousel.umd.js"></script></head>
 <body>
@@ -312,7 +320,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>간식</p>
       
         <div class="food-item"><img src="img/food/noodle_intestine.jpg" width="480" height="360" loading="lazy" decoding="async" alt="아종면선 시먼점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">아종면선 시먼점</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E5%AE%97%E9%BA%B5%E7%B7%9A%20%E8%A5%BF%E9%96%80%E7%94%BA" target="_blank" rel="noopener">아종면선 시먼점<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$60~80</div>
@@ -323,21 +331,21 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>저녁 — 3개 중 택1</p>
       
         <div class="food-item"><img src="img/beefnoodle.jpg" width="800" height="600" loading="lazy" decoding="async" alt="라오산둥 우육면가상점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">라오산둥 우육면가상점</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E8%80%81%E5%B1%B1%E6%9D%B1%E7%89%9B%E8%82%89%E9%BA%B5%20%E5%8F%B0%E5%8C%97%20%E8%90%AC%E5%B9%B4%E5%95%86%E6%A5%AD%E5%A4%A7%E6%A8%93" target="_blank" rel="noopener">라오산둥 우육면가상점<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망 8년 연속</span>
           </div>
           <div class="food-item-p">NT$150~250</div>
           <div class="food-item-d">완녠상업대루 B1. 400석 이상이라 8인 좌석 걱정 없음</div>
         </div></div>
         <div class="food-item"><img src="img/food/malahotpot.jpg" width="480" height="359" loading="lazy" decoding="async" alt="마라딩지 훠궈 시먼점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">마라딩지 훠궈 시먼점</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E9%A6%AC%E8%BE%A3%E9%A0%82%E7%B4%9A%E9%BA%BB%E8%BE%A3%E9%B4%9B%E9%B4%A6%E7%81%AB%E9%8D%8B%20%E8%A5%BF%E9%96%80" target="_blank" rel="noopener">마라딩지 훠궈 시먼점<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$698~999</div>
           <div class="food-item-d">마라·원앙 훠궈 무제한. 단체석 예약 필수</div>
         </div></div>
         <div class="food-item"><img src="img/nightmarket_food.jpg" width="800" height="638" loading="lazy" decoding="async" alt="라오허제 관광야시장" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">라오허제 관광야시장</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E9%A5%92%E6%B2%B3%E8%A1%97%E8%A7%80%E5%85%89%E5%A4%9C%E5%B8%82" target="_blank" rel="noopener">라오허제 관광야시장<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 추천 노점 다수</span>
           </div>
           <div class="food-item-p">NT$50~100</div>
@@ -393,21 +401,21 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>점심 — 3개 중 택1</p>
       
         <div class="food-item"><img src="img/food/seafood_plate.jpg" width="480" height="360" loading="lazy" decoding="async" alt="북해어항" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">북해어항</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E5%8C%97%E6%B5%B7%E6%BC%81%E6%B8%AF%20%E9%87%8E%E6%9F%B3" target="_blank" rel="noopener">북해어항<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$300~600</div>
           <div class="food-item-d">회전판 테이블이라 다인원 나눠먹기 좋음. 부모님 동반 후기 다수</div>
         </div></div>
         <div class="food-item"><img src="img/food/seafood2.jpg" width="360" height="480" loading="lazy" decoding="async" alt="왕하이팅 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">왕하이팅 해선餐廳</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E6%9C%9B%E6%B5%B7%E4%BA%AD%E6%B5%B7%E9%AE%AE%E9%A4%90%E5%BB%B3%20%E9%87%8E%E6%9F%B3" target="_blank" rel="noopener">왕하이팅 해선餐廳<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">60년 노포</span>
           </div>
           <div class="food-item-p">1인 NT$375~1,000</div>
           <div class="food-item-d">합채 3,000~8,000. 활랍스터 NT$680/마리. 1층 넓은 단체석 + 무료주차</div>
         </div></div>
         <div class="food-item"><img src="img/food/seafood3.jpg" width="480" height="473" loading="lazy" decoding="async" alt="쓰제메이 해선餐廳" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">쓰제메이 해선餐廳</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E5%9B%9B%E5%A7%8A%E5%A6%B9%E6%B5%B7%E9%AE%AE%E9%A4%90%E5%BB%B3%20%E9%87%8E%E6%9F%B3" target="_blank" rel="noopener">쓰제메이 해선餐廳<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">40년 노포</span>
           </div>
           <div class="food-item-p">NT$300~800</div>
@@ -418,7 +426,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>간식</p>
       
         <div class="food-item"><img src="img/food/peanut_icecream.jpg" width="480" height="360" loading="lazy" decoding="async" alt="아주 땅콩아이스크림 (阿珠雪在燒)" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">아주 땅콩아이스크림 (阿珠雪在燒)</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E9%98%BF%E7%8F%A0%E9%9B%AA%E5%9C%A8%E7%87%92%20%E4%B9%9D%E4%BB%BD" target="_blank" rel="noopener">아주 땅콩아이스크림 (阿珠雪在燒)<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$40~60</div>
@@ -474,14 +482,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>점심 — 2개 중 택1</p>
       
         <div class="food-item"><img src="img/food/taiwanese_banquet.jpg" width="361" height="480" loading="lazy" decoding="async" alt="펑라이 대만요리" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">펑라이 대만요리</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E8%93%AC%E8%90%8A%E5%8F%B0%E8%8F%9C%20%E5%8C%97%E6%8A%95" target="_blank" rel="noopener">펑라이 대만요리<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 가이드 셀렉트</span>
           </div>
           <div class="food-item-p">NT$400~600</div>
           <div class="food-item-d">가족식 공유 스타일. 불도장·백옥토계. 연회석 있음</div>
         </div></div>
         <div class="food-item"><img src="img/food/teppanyaki.jpg" width="385" height="480" loading="lazy" decoding="async" alt="타오반우 신베이터우점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">타오반우 신베이터우점</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E9%99%B6%E6%9D%BF%E5%B1%8B%20%E6%96%B0%E5%8C%97%E6%8A%95" target="_blank" rel="noopener">타오반우 신베이터우점<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$400~600</div>
@@ -492,21 +500,21 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>저녁 — 시먼딩 근처 or [옵션] 키키</p>
       
         <div class="food-item"><img src="img/food/sichuan_dish.jpg" width="480" height="360" loading="lazy" decoding="async" alt="키키 레스토랑 ATT4FUN점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">키키 레스토랑 ATT4FUN점 [옵션]</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=KiKi%E9%A4%90%E5%BB%B3%20ATT4FUN%20%E4%BF%A1%E7%BE%A9" target="_blank" rel="noopener">키키 레스토랑 ATT4FUN점 [옵션]<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">타이베이 유일 지점</span>
           </div>
           <div class="food-item-p">1인 NT$500~700</div>
           <div class="food-item-d">예약 필수(inline.app 2주 전 오픈 / 02-2722-0388). 가고 싶으면 이날 저녁으로</div>
         </div></div>
         <div class="food-item"><img src="img/food/friedrice.jpg" width="480" height="360" loading="lazy" decoding="async" alt="신차오판뎬 心潮飯店" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">신차오판뎬 心潮飯店</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E5%BF%83%E6%BD%AE%E9%A3%AF%E5%BA%97%20%E4%BF%A1%E7%BE%A9" target="_blank" rel="noopener">신차오판뎬 心潮飯店<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
           <div class="food-item-p">NT$500~700</div>
           <div class="food-item-d">브리즈신이 2F. U자 소파 7~8인석 확인됨</div>
         </div></div>
         <div class="food-item"><img src="img/beefnoodle2.jpg" width="480" height="270" loading="lazy" decoding="async" alt="무지 우육면 穆記牛肉麵" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">무지 우육면 穆記牛肉麵</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%A9%86%E8%A8%98%E7%89%9B%E8%82%89%E9%BA%B5%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">무지 우육면 穆記牛肉麵<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망 8년 연속</span>
           </div>
           <div class="food-item-p">NT$150~250</div>
@@ -562,7 +570,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>오전 — 융캉제 (THSR 타기 전)</p>
       
         <div class="food-item"><img src="img/xiaolongbao.jpg" width="800" height="600" loading="lazy" decoding="async" alt="딘타이펑 신생점" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">딘타이펑 신생점</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E9%BC%8E%E6%B3%B0%E8%B1%90%20%E6%96%B0%E7%94%9F%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">딘타이펑 신생점<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">뉴욕타임즈 선정 세계 10대 레스토랑</span>
           </div>
           <div class="food-item-p">NT$400~600</div>
@@ -573,14 +581,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>보얼예술특구 맛집·카페</p>
       
         <div class="food-item"><img src="img/food/beefnoodle3.jpg" width="480" height="360" loading="lazy" decoding="async" alt="향원우육면" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">향원우육면</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E6%B8%AF%E5%9C%92%E7%89%9B%E8%82%89%E9%BA%B5%20%E9%AB%98%E9%9B%84" target="_blank" rel="noopener">향원우육면<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$150~250</div>
           <div class="food-item-d">보얼 근처 우육면 노포</div>
         </div></div>
         <div class="food-item"><img src="img/food/brunch_coffee.jpg" width="480" height="320" loading="lazy" decoding="async" alt="NOW &amp; THEN by nybc" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">NOW &amp; THEN by nybc</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=NOW%20%26%20THEN%20by%20nybc%20%E9%AB%98%E9%9B%84" target="_blank" rel="noopener">NOW &amp; THEN by nybc<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$150~250</div>
@@ -591,21 +599,21 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>저녁 — 루이펑 야시장 노점</p>
       
         <div class="food-item"><img src="img/food/porkknuckle.jpg" width="480" height="360" loading="lazy" decoding="async" alt="화훈 독일족발" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">화훈 독일족발</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%91%9E%E8%B1%90%E5%A4%9C%E5%B8%82%20%E8%8F%AF%E5%8B%9B%E5%BE%B7%E5%9C%8B%E8%B1%AC%E8%85%B3" target="_blank" rel="noopener">화훈 독일족발<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">야시장 최고 인기</span>
           </div>
           <div class="food-item-p">NT$150</div>
           <div class="food-item-d">숯불 훈제 족발, 소스 3종 선택</div>
         </div></div>
         <div class="food-item"><img src="img/food/paella.jpg" width="480" height="320" loading="lazy" decoding="async" alt="Z의 스페인 빠에야" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">Z의 스페인 빠에야</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%91%9E%E8%B1%90%E5%A4%9C%E5%B8%82%20%E8%A5%BF%E7%8F%AD%E7%89%99%E6%B5%B7%E9%AE%AE%E7%87%89%E9%A3%AF" target="_blank" rel="noopener">Z의 스페인 빠에야<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$130</div>
           <div class="food-item-d">초리조 + 닭다리살 + 훈제베이컨</div>
         </div></div>
         <div class="food-item"><img src="img/food/oysteromelette.jpg" width="360" height="480" loading="lazy" decoding="async" alt="샤오사부 상하이 탕바오/굴전" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">샤오사부 상하이 탕바오/굴전</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%91%9E%E8%B1%90%E5%A4%9C%E5%B8%82%20%E8%9A%B5%E4%BB%94%E7%85%8E%20%E5%B0%8F%E6%B2%99%E5%B8%83" target="_blank" rel="noopener">샤오사부 상하이 탕바오/굴전<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$90</div>
@@ -661,14 +669,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>점심 — 안핑 옛거리 구간 (투어 일정 포함)</p>
       
         <div class="food-item"><img src="img/food/zongzi.jpg" width="480" height="270" loading="lazy" decoding="async" alt="재파하오 再發號" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">재파하오 再發號</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E5%86%8D%E7%99%BC%E8%99%9F%20%E5%8F%B0%E5%8D%97" target="_blank" rel="noopener">재파하오 再發號<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
           <div class="food-item-p">NT$50~150</div>
           <div class="food-item-d">八寶肉粽 전문. 좌석이 적어 분산 방문 권장</div>
         </div></div>
         <div class="food-item"><img src="img/food/banquet3.jpg" width="480" height="320" loading="lazy" decoding="async" alt="푸타이판줘 제3대" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">푸타이판줘 제3대</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%A6%8F%E6%B3%B0%E9%A3%AF%E6%A1%8C%20%E5%8F%B0%E5%8D%97%20%E8%B5%A4%E5%B4%81" target="_blank" rel="noopener">푸타이판줘 제3대<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망</span>
           </div>
           <div class="food-item-p">NT$124~</div>
@@ -679,21 +687,21 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>저녁 — 리우허 야시장 / 좌식</p>
       
         <div class="food-item"><img src="img/food/nightmarket2.jpg" width="480" height="360" loading="lazy" decoding="async" alt="리우허 야시장" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">리우허 야시장</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E5%85%AD%E5%90%88%E5%A4%9C%E5%B8%82%20%E9%AB%98%E9%9B%84" target="_blank" rel="noopener">리우허 야시장<span class="mpin">지도</span></a></span>
             
           </div>
           <div class="food-item-p">NT$100~150</div>
           <div class="food-item-d">MRT 메이리다오역. 파파야밀크·해산물죽·새우메추리알볼</div>
         </div></div>
         <div class="food-item"><img src="img/food/banquet4.jpg" width="480" height="360" loading="lazy" decoding="async" alt="白玉樓 경전대채" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">白玉樓 경전대채</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%99%BD%E7%8E%89%E6%A8%93%20%E9%AB%98%E9%9B%84%20%E5%A4%A2%E6%99%82%E4%BB%A3" target="_blank" rel="noopener">白玉樓 경전대채<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망 2025 신규</span>
           </div>
           <div class="food-item-p">NT$500~800</div>
           <div class="food-item-d">몽시대 6F. 2~10인 단체 세트 운영</div>
         </div></div>
         <div class="food-item"><img src="img/food/shabu.jpg" width="480" height="360" loading="lazy" decoding="async" alt="牛老大 涮牛肉" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">牛老大 涮牛肉</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%89%9B%E8%80%81%E5%A4%A7%E6%B6%AE%E7%89%9B%E8%82%89%20%E9%AB%98%E9%9B%84" target="_blank" rel="noopener">牛老大 涮牛肉<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 빕구르망 연속 등재</span>
           </div>
           <div class="food-item-p">NT$999 이하</div>
@@ -749,14 +757,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
       <p>아침 — 2개 중 택1</p>
       
         <div class="food-item"><img src="img/food/soupdumpling_breakfast.jpg" width="480" height="360" loading="lazy" decoding="async" alt="흥륭거 興隆居" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">흥륭거 興隆居</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E8%88%88%E9%9A%86%E5%B1%85%20%E9%AB%98%E9%9B%84" target="_blank" rel="noopener">흥륭거 興隆居<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">미슐랭 가이드 소개</span>
           </div>
           <div class="food-item-p">NT$40~80</div>
           <div class="food-item-d">새벽 4:30~11:30만 운영. 탕바오 &amp; 또우장</div>
         </div></div>
         <div class="food-item"><img src="img/food/danbing.jpg" width="384" height="480" loading="lazy" decoding="async" alt="콴라이순 寬來順" class="food-thumb"><div class="food-item-body"><div class="food-item-h">
-            <span class="food-item-n">콴라이순 寬來順</span>
+            <span class="food-item-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E5%AF%AC%E4%BE%86%E9%A0%86%20%E9%AB%98%E9%9B%84%20%E5%B7%A6%E7%87%9F" target="_blank" rel="noopener">콴라이순 寬來順<span class="mpin">지도</span></a></span>
             <span class="badge badge-gold">가오슝 조식 양대산맥</span>
           </div>
           <div class="food-item-p">NT$25~70</div>
@@ -784,7 +792,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   </div>
   <div class="tabs">
     <div class="tabs-list" data-tabs="stay">
-      <button class="tab-trigger" data-tab="tp" data-active="true">타이베이 3박 (6곳)</button>
+      <button class="tab-trigger" data-tab="tp" data-active="true">타이베이 3박 (7곳)</button>
       <button class="tab-trigger" data-tab="kh">가오슝 2박 (6곳)</button>
     </div>
     <div class="tab-panel" data-panel="tp" data-active="true">
@@ -792,7 +800,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="true">
     <div class="stay-h">
       <div>
-        <div class="stay-n">萬壽里 아파트 D</div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/s/Ximending--Taipei/homes?checkin=2027-01-20&checkout=2027-01-23&adults=8" target="_blank" rel="noopener">萬壽里 아파트 D<span class="mpin">에어비앤비 검색</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>시먼딩 보행자구역 한복판</span>
           <span>침실3 · 욕실3 · 6~12인</span>
@@ -813,7 +821,28 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">新起里 Sunshine House</div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/rooms/1304825781535791730" target="_blank" rel="noopener">青山里 Lustre (가족 공유)<span class="mpin">예약 페이지</span></a></div>
+        <div class="stay-meta" style="margin-top:3px">
+          <span>용산사역 도보 5분 · 시먼딩 1정거장</span>
+          <span>침실4 · 퀸베드4 · 욕실3 · 최대 8인</span>
+          <span>평점 4.79 (후기 62) · 슈퍼호스트</span>
+        </div>
+      </div>
+      <span class="badge badge-accent">에어비앤비</span>
+    </div>
+    <div>
+      <div class="stay-price">145,153원 <small>/ 인</small></div>
+      <div class="stay-meta"><span>116만원 (3박) · 실제 조회가 (1/20~23, 8인)</span></div>
+    </div>
+    <div class="pc">
+      <div class="p"><span>후보 중 가장 저렴 — 萬壽里 대비 인당 6만원 절감</span></div><div class="p"><span>화시제 야시장·용산사 도보 3분</span></div>
+      <div class="c"><span>엘리베이터 없음, 2·3층 좁은 계단 — 후기에 "어르신께 불편" 언급</span></div>
+    </div>
+  </div>
+  <div class="stay" data-pick="false">
+    <div class="stay-h">
+      <div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/s/Ximending--Taipei/homes?checkin=2027-01-20&checkout=2027-01-23&adults=8" target="_blank" rel="noopener">新起里 Sunshine House<span class="mpin">에어비앤비 검색</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>시먼딩</span>
           <span>침실5 · 욕실5 · 6~14인</span>
@@ -834,7 +863,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">타이베이역 3룸 패밀리하우스</div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/s/Taipei-Main-Station--Taipei/homes?checkin=2027-01-20&checkout=2027-01-23&adults=8" target="_blank" rel="noopener">타이베이역 3룸 패밀리하우스<span class="mpin">에어비앤비 검색</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>다퉁구, 타이베이역 인근</span>
           <span>침실3 · 욕실2</span>
@@ -855,7 +884,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">코스모스 호텔 타이베이역점</div>
+        <div class="stay-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=Cosmos%20Hotel%20Taipei%20%E5%A4%A9%E6%88%90%E5%A4%A7%E9%A3%AF%E5%BA%97" target="_blank" rel="noopener">코스모스 호텔 타이베이역점<span class="mpin">지도·가격비교</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>타이베이역 100m 이내</span>
           <span>패밀리 4인룸 × 2</span>
@@ -876,7 +905,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">시저메트로 타이베이</div>
+        <div class="stay-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=Caesar%20Metro%20Taipei%20%E5%87%B1%E6%92%92%E5%A4%A7%E9%A3%AF%E5%BA%97%20%E6%9D%BF%E6%A9%8B" target="_blank" rel="noopener">시저메트로 타이베이<span class="mpin">지도·가격비교</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>완화구 룽산쓰역 도보 3분</span>
           <span>Family Quad × 2 (33㎡)</span>
@@ -897,7 +926,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">댄디호텔 다안</div>
+        <div class="stay-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=Dandy%20Hotel%20Daan%20Taipei%20%E4%B8%B9%E8%BF%AA%E6%97%85%E5%BA%97%20%E5%A4%A7%E5%AE%89" target="_blank" rel="noopener">댄디호텔 다안<span class="mpin">지도·가격비교</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>다안썬린공원역 도보 3분</span>
           <span>융캉제 도보 5~10분</span>
@@ -942,7 +971,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="true">
     <div class="stay-h">
       <div>
-        <div class="stay-n">샤또드치네 가오슝</div>
+        <div class="stay-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=%E7%BF%B0%E5%93%81%E9%85%92%E5%BA%97%E9%AB%98%E9%9B%84%20Chateau%20de%20Chine%20Kaohsiung" target="_blank" rel="noopener">샤또드치네 가오슝<span class="mpin">지도·가격비교</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>옌청구, MRT 옌청푸역 도보 3분</span>
           <span>패밀리룸 × 2</span>
@@ -963,7 +992,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="true">
     <div class="stay-h">
       <div>
-        <div class="stay-n">신싱구의 집</div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/s/Xinxing-District--Kaohsiung/homes?checkin=2027-01-23&checkout=2027-01-25&adults=8" target="_blank" rel="noopener">신싱구의 집<span class="mpin">에어비앤비 검색</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>MRT 메이리다오역 도보 3분</span>
           <span>침실4 · 침대16 · 욕실3 · 1~20인</span>
@@ -984,7 +1013,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">府北里 아파트</div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/s/Yancheng-District--Kaohsiung/homes?checkin=2027-01-23&checkout=2027-01-25&adults=8" target="_blank" rel="noopener">府北里 아파트<span class="mpin">에어비앤비 검색</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>옌청구</span>
           <span>침실4 · 욕실4 · 거실 있음 · 10인 단체 우대</span>
@@ -1005,7 +1034,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">쭤잉 빌라</div>
+        <div class="stay-n"><a class="mlink" href="https://www.airbnb.co.kr/s/Zuoying-District--Kaohsiung/homes?checkin=2027-01-23&checkout=2027-01-25&adults=8" target="_blank" rel="noopener">쭤잉 빌라<span class="mpin">에어비앤비 검색</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>쭤잉 고속철역 인근</span>
           <span>침실4 · 침대8 · 욕실4.5 · 6~15인</span>
@@ -1026,7 +1055,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">호텔 코지 중산</div>
+        <div class="stay-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Cozzi%20Zhongshan%20Kaohsiung%20%E5%92%8C%E9%80%B8%E9%A3%AF%E5%BA%97%20%E4%B8%AD%E5%B1%B1%E9%A4%A8" target="_blank" rel="noopener">호텔 코지 중산<span class="mpin">지도·가격비교</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>가오슝 시내</span>
           <span>4인실 × 2</span>
@@ -1047,7 +1076,7 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="stay" data-pick="false">
     <div class="stay-h">
       <div>
-        <div class="stay-n">가오슝 메리어트</div>
+        <div class="stay-n"><a class="mlink" href="https://www.google.com/maps/search/?api=1&query=Kaohsiung%20Marriott%20Hotel%20%E9%AB%98%E9%9B%84%E8%90%AC%E8%B1%AA%E9%85%92%E5%BA%97" target="_blank" rel="noopener">가오슝 메리어트<span class="mpin">지도·가격비교</span></a></div>
         <div class="stay-meta" style="margin-top:3px">
           <span>구산구, MRT 아오즈디역</span>
           <span>Family Suite Connector 92㎡ 등</span>
@@ -1178,14 +1207,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="tbl-scroll-hint">👉 표가 넓어요 — 옆으로 밀어보세요</div><div class="tbl-wrap"><table>
     <thead><tr><th>항목</th><th>방법</th><th class="num">인당 절감</th><th class="num">8인 총액</th></tr></thead>
     <tbody>
-      <tr><td><b>THSR 고속철 1+1</b></td><td>KKday × 대만관광청 공식 프로모션(코드 KKTHSR24). 2명이 <b>동일 일정</b>으로 동시 예약 시 2번째 무료. 쭤잉(가오슝) 도착 대상 포함, 여권번호당 1회 → 8인 4쌍 전원 적용 가능. <b>⚠️ 구입 다음날부터 89일 내 사용 조건이라 2026년 10월 말~11월에 구입해야 함</b> (지금 사면 만료). 선착순 수량 한정</td><td class="num"><b>30,929원</b></td><td class="num">247,432원</td></tr>
+      <tr><td><b>THSR 고속철 1+1</b></td><td><a class="mlink" href="https://www.kkday.com/ko/promo/thsr-go2taiwan" target="_blank" rel="noopener">KKday × 대만관광청 공식 프로모션<span class="mpin">바로가기</span></a>(코드 KKTHSR24). 2명이 <b>동일 일정</b>으로 동시 예약 시 2번째 무료. 쭤잉(가오슝) 도착 대상 포함, 여권번호당 1회 → 8인 4쌍 전원 적용 가능. <b>⚠️ 구입 다음날부터 89일 내 사용 조건이라 2026년 10월 말~11월에 구입해야 함</b> (지금 사면 만료). 선착순 수량 한정</td><td class="num"><b>30,929원</b></td><td class="num">247,432원</td></tr>
       <tr><td><b>여행자보험</b></td><td>항공권을 무료 여행자보험 제공 카드로 결제. <b>⚠️ 현대카드는 "국제선 <u>왕복</u> 항공요금 전액" 조건 — 이번 여행은 대한항공 편도+티웨이 편도 오픈조라 인정 안 될 수 있음. 예약 전 1577-6000 확인 필수.</b> 플래티넘 등급(M2/M3 Platinum 등) 한정, 8인 각자 본인 카드로 결제해야 각자 보장</td><td class="num"><b>30,000원</b></td><td class="num">240,000원</td></tr>
-      <tr><td><b>숙소</b></td><td>아고다 <b>토스페이 11%</b> 자동할인(최대 $100). 네이버페이도 동일 조건. 프로모션은 분기별 갱신되니 예약 시점에 아고다 프로모션 페이지 재확인. 트립닷컴은 매일 11시 선착순 쿠폰(호텔 최대 5만원)</td><td class="num"><b>17,500원</b></td><td class="num">140,000원</td></tr>
-      <tr><td><b>환전·해외결제</b></td><td><b>토스뱅크 외화통장 + 토스뱅크 체크카드</b> — TWD가 지원 17종 통화에 정식 포함되어 환전·해외결제 수수료 <b>0원</b>. ATM 출금도 월 5회/US$700까지 무료. (트래블월렛은 TWD가 기타통화라 0.5~2.5% 붙음 → 토스가 우위)</td><td class="num"><b>6,947원</b></td><td class="num">55,576원</td></tr>
-      <tr><td><b>입장·체험</b></td><td>예류·치메이 등 KKday / Klook 사전구매 (현장가 대비 약 7%)</td><td class="num"><b>4,714원</b></td><td class="num">37,712원</td></tr>
-      <tr><td><b>투어</b></td><td>마이리얼트립 카카오페이·토스페이·퀵계좌이체 즉시할인 (약 3%)</td><td class="num"><b>1,677원</b></td><td class="num">13,416원</td></tr>
-      <tr><td><b>이지카드</b></td><td>인터파크 / Klook 사전구매 (공항수령 약 3,994원 + 부가쿠폰)</td><td class="num"><b>1,000원</b></td><td class="num">8,000원</td></tr>
-      <tr><td><b>티웨이 쿠폰북</b></td><td>twayair.com 쿠폰 메뉴에 카드사·카카오페이 쿠폰이 수시로 올라옴(국제선 2~8만원). <b>결제기간이 하루~열흘로 매우 짧으니</b> 항공권 결제 직전에 반드시 확인. 결제 건당 1매만, 유류할증료엔 미적용</td><td class="num">변동</td><td class="num">변동</td></tr>
+      <tr><td><b>숙소</b></td><td><a class="mlink" href="https://www.agoda.com/ko-kr/" target="_blank" rel="noopener">아고다</a> <b>토스페이 11%</b> 자동할인(최대 $100). 네이버페이도 동일 조건. 프로모션은 분기별 갱신되니 예약 시점에 아고다 프로모션 페이지 재확인. <a class="mlink" href="https://kr.trip.com/sale/w/9745/twhottnt.html" target="_blank" rel="noopener">트립닷컴</a>은 매일 11시 선착순 쿠폰(호텔 최대 5만원)</td><td class="num"><b>17,500원</b></td><td class="num">140,000원</td></tr>
+      <tr><td><b>환전·해외결제</b></td><td><a class="mlink" href="https://www.tossbank.com/articles/currency-exchange" target="_blank" rel="noopener"><b>토스뱅크 외화통장 + 토스뱅크 체크카드</b><span class="mpin">안내</span></a> — TWD가 지원 17종 통화에 정식 포함되어 환전·해외결제 수수료 <b>0원</b>. ATM 출금도 월 5회/US$700까지 무료. (트래블월렛은 TWD가 기타통화라 0.5~2.5% 붙음 → 토스가 우위)</td><td class="num"><b>6,947원</b></td><td class="num">55,576원</td></tr>
+      <tr><td><b>입장·체험</b></td><td>예류·치메이 등 <a class="mlink" href="https://www.kkday.com/ko/product/ProductList?keyword=%EC%98%88%EB%A5%98" target="_blank" rel="noopener">KKday</a> / <a class="mlink" href="https://www.klook.com/ko/search/?query=%EC%98%88%EB%A5%98" target="_blank" rel="noopener">Klook</a> 사전구매 (현장가 대비 약 7%)</td><td class="num"><b>4,714원</b></td><td class="num">37,712원</td></tr>
+      <tr><td><b>투어</b></td><td><a class="mlink" href="https://www.myrealtrip.com/" target="_blank" rel="noopener">마이리얼트립</a> 카카오페이·토스페이·퀵계좌이체 즉시할인 (약 3%)</td><td class="num"><b>1,677원</b></td><td class="num">13,416원</td></tr>
+      <tr><td><b>이지카드</b></td><td><a class="mlink" href="https://www.klook.com/ko/activity/5777-public-transport-easycard-taipei" target="_blank" rel="noopener">Klook 이지카드<span class="mpin">예약</span></a> (공항수령 약 3,994원 + 부가쿠폰)</td><td class="num"><b>1,000원</b></td><td class="num">8,000원</td></tr>
+      <tr><td><b>티웨이 쿠폰북</b></td><td><a class="mlink" href="https://www.twayair.com/app/promotion/coupon" target="_blank" rel="noopener">티웨이 쿠폰북<span class="mpin">바로가기</span></a>에 카드사·카카오페이 쿠폰이 수시로 올라옴(국제선 2~8만원). <b>결제기간이 하루~열흘로 매우 짧으니</b> 항공권 결제 직전에 반드시 확인. 결제 건당 1매만, 유류할증료엔 미적용</td><td class="num">변동</td><td class="num">변동</td></tr>
       <tr><td><b>에어비앤비 카카오페이 10%</b></td><td>공식 약관상 숙박 시작일 2026-09-30까지 → <b>이번 여행은 대상 아님</b>. 재개 시 최대 2만원</td><td class="num">해당없음</td><td class="num">해당없음</td></tr>
     </tbody>
     <tfoot><tr><td colspan="2">절감액 합계</td><td class="num">92,767원</td><td class="num">742,136원</td></tr></tfoot>
@@ -1290,14 +1319,14 @@ footer{margin-top:64px;padding:28px 0 48px;border-top:1px solid hsl(var(--border
   <div class="tbl-scroll-hint">👉 표가 넓어요 — 옆으로 밀어보세요</div><div class="tbl-wrap"><table>
     <thead><tr><th>항목</th><th>언제</th><th>어디서</th><th class="num">대략 비용</th></tr></thead>
     <tbody>
-      <tr><td><b>항공권</b> (KE2025 출국 + TW672 귀국 확정)</td><td>지금 구매 필요</td><td>항공사 직접</td><td class="num">인당 약 56만원</td></tr>
-      <tr><td><b>숙소</b> (타이베이·가오슝)</td><td>3~4개월 전</td><td>에어비앤비 / 호텔 예약</td><td class="num">인당 약 37.5만원</td></tr>
-      <tr><td><b>Day2 예스지 버스투어</b></td><td>1~2개월 전</td><td>마이리얼트립 "예스지" 오후 조인버스</td><td class="num">인당 13,900원</td></tr>
-      <tr><td><b>Day5 타이난 버스투어</b></td><td>1~2개월 전</td><td>마이리얼트립 "타이난 필수 원데이 시티투어"</td><td class="num">인당 42,000원</td></tr>
-      <tr><td><b>THSR 고속철</b> (외국인 할인)</td><td>1개월 전 ~ 28일 전</td><td>KKday / Klook → THSR 공식에서 좌석 지정</td><td class="num">인당 약 62,000원</td></tr>
-      <tr><td><b>키키 레스토랑</b> 8인 [옵션]</td><td>2주 전 오픈 즉시</td><td>inline.app 또는 02-2722-0388</td><td class="num">인당 NT$500~700</td></tr>
-      <tr><td><b>치진섬 4인 전동카트 2대</b></td><td>1~2주 전</td><td>현장 또는 페이스북 사전 문의</td><td class="num">NT$3,000</td></tr>
-      <tr><td><b>베이터우 온천</b> [옵션]</td><td>1~2주 전 (가족탕은 필수)</td><td>麗之湯 02-2891-0033</td><td class="num">인당 NT$600</td></tr>
+      <tr><td><b>항공권</b> (KE2025 출국 + TW672 귀국 확정)</td><td>지금 구매 필요</td><td><a class="blink" href="https://www.koreanair.com/" target="_blank" rel="noopener">대한항공</a> <a class="blink" href="https://www.twayair.com/" target="_blank" rel="noopener">티웨이</a> <a class="blink" href="https://www.twayair.com/app/promotion/coupon" target="_blank" rel="noopener">티웨이 쿠폰북</a></td><td class="num">인당 약 56만원</td></tr>
+      <tr><td><b>숙소</b> (타이베이·가오슝)</td><td>3~4개월 전</td><td><a class="blink" href="https://www.airbnb.co.kr/rooms/1304825781535791730" target="_blank" rel="noopener">에어비앤비 Lustre</a> <a class="blink" href="https://www.agoda.com/ko-kr/" target="_blank" rel="noopener">아고다</a></td><td class="num">인당 약 37.5만원</td></tr>
+      <tr><td><b>Day2 예스지 버스투어</b></td><td>1~2개월 전</td><td><a class="blink" href="https://experiences.myrealtrip.com/products/3481408" target="_blank" rel="noopener">마이리얼트립 13:30 예스지</a></td><td class="num">인당 13,900원</td></tr>
+      <tr><td><b>Day5 타이난 버스투어</b></td><td>1~2개월 전</td><td><a class="blink" href="https://experiences.myrealtrip.com/products/3827354" target="_blank" rel="noopener">마이리얼트립 타이난 시티투어</a></td><td class="num">인당 42,000원</td></tr>
+      <tr><td><b>THSR 고속철</b> (외국인 할인 + 1+1)</td><td><b>2026년 10월 말~11월</b> (89일 규정)</td><td><a class="blink" href="https://www.kkday.com/ko/promo/thsr-go2taiwan" target="_blank" rel="noopener">KKday 1+1 프로모션</a> <a class="blink" href="https://pass.thsrc.com.tw/oatsb2c/home.do" target="_blank" rel="noopener">THSR 좌석지정</a></td><td class="num">인당 약 62,000원</td></tr>
+      <tr><td><b>키키 레스토랑</b> 8인 [옵션]</td><td>2주 전 오픈 즉시</td><td><a class="blink" href="https://inline.app/" target="_blank" rel="noopener">inline.app</a> 또는 02-2722-0388</td><td class="num">인당 NT$500~700</td></tr>
+      <tr><td><b>치진섬 4인 전동카트 2대</b></td><td>1~2주 전</td><td><a class="blink" href="https://www.google.com/maps/search/?api=1&query=%E6%97%97%E6%B4%A5%20%E9%9B%BB%E5%8B%95%E8%BB%8A%E5%87%BA%E7%A7%9F" target="_blank" rel="noopener">치진 전동카트 대여소</a></td><td class="num">NT$3,000</td></tr>
+      <tr><td><b>베이터우 온천</b> [옵션]</td><td>1~2주 전 (가족탕은 필수)</td><td><a class="blink" href="https://www.google.com/maps/search/?api=1&query=%E9%BA%97%E4%B9%8B%E6%B9%AF%E6%BA%AB%E6%B3%89%E6%9C%83%E9%A4%A8%20%E5%8C%97%E6%8A%95" target="_blank" rel="noopener">麗之湯</a> 02-2891-0033</td><td class="num">인당 NT$600</td></tr>
     </tbody>
   </table></div>
 </div></section>
