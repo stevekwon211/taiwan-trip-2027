@@ -195,7 +195,15 @@ section{scroll-margin-top:calc(var(--nav-h) + 8px)}
 .cost-note ul{padding-left:16px;color:var(--sub);font-size:13.5px;line-height:1.6;margin-top:9px}
 .cost-note li+li{margin-top:4px}
 .callout{margin-top:13px;padding:13px 15px;border-radius:12px;background:var(--warm-soft);color:var(--warm);font-size:13px;font-weight:600;line-height:1.55}
-.cost-rows{margin-top:14px;padding:4px 18px}
+.rows-head{margin-top:22px;margin-bottom:10px}
+.rows-head h3{font-size:16px;font-weight:800;letter-spacing:-.02em}
+.rows-head p{color:var(--sub);font-size:13px;margin-top:5px;line-height:1.55;max-width:56ch}
+.rows-head p b{color:var(--ink);font-weight:700}
+.cost-rows{margin-top:0;padding:4px 18px}
+.cost-row.is-total{border-bottom:0}
+.cost-row.is-total .item{font-weight:800}
+.cost-row.is-total .amt b{font-size:16px;color:var(--brand)}
+.rows-note{color:var(--faint);font-size:12px;line-height:1.55;margin-top:10px;max-width:60ch}
 .cost-row{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
 .cost-row:last-child{border-bottom:0}
 .cost-row .kind{display:inline-block;font-size:11px;font-weight:800;color:var(--faint);background:var(--wash);border-radius:6px;padding:2px 7px;margin-bottom:3px}
@@ -561,7 +569,7 @@ footer{padding:36px 0 52px;text-align:center;color:var(--sub);font-size:12.5px;l
         <div><span>항공 KE2025 + TW672</span><b>555,930원</b></div>
         <div><span>타이베이 숙소</span><b>139,789원</b></div>
         <div><span>가오슝 숙소 (가정)</span><b>174,500원</b></div>
-        <div><span>현지 활동 · 식비 · 투어</span><b>486,463원</b></div>
+        <div><span>현지 교통 · 식비 · 투어 · 체험</span><b>486,463원</b></div>
         <div><span>보험 · eSIM · 기념품</span><b>130,000원</b></div>
       </div>
     </div>
@@ -578,6 +586,10 @@ footer{padding:36px 0 52px;text-align:center;color:var(--sub);font-size:12.5px;l
     </div>
   </div>
 
+  <div class="rows-head">
+    <h3>현지 경비 상세</h3>
+    <p>위 <b>현지 교통 · 식비 · 투어 · 체험</b> 한 줄을 풀어 쓴 것입니다. 항공 · 숙소 · 보험은 여기에 들어 있지 않습니다.</p>
+  </div>
   <div class="surface cost-rows">
     <div class="cost-row">
       <div><span class="kind">교통</span><div class="item">THSR 타이베이 → 쭤잉</div></div>
@@ -599,7 +611,12 @@ footer{padding:36px 0 52px;text-align:center;color:var(--sub);font-size:12.5px;l
       <div><span class="kind">체험</span><div class="item">입장료 · 온천 · 치진 선택비</div></div>
       <div class="amt"><b>538,684원</b><span>1인 67,336원</span></div>
     </div>
+    <div class="cost-row is-total">
+      <div><div class="item">합계</div></div>
+      <div class="amt"><b>3,891,700원</b><span>1인 486,463원</span></div>
+    </div>
   </div>
+  <p class="rows-note">1인 금액은 8인 총액을 8로 나눈 뒤 원 단위에서 반올림한 값입니다. 체험 항목만 딱 나누어떨어지지 않아, 1인 금액을 다시 8배 하면 합계와 4원 차이가 납니다.</p>
 </div></section>
 
 <!-- ============ 준비 ============ -->
